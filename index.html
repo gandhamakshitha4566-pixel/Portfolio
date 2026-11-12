@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Gandham Akshitha | Software Developer</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    background:#f8f9ff;
+    color:#222;
+}
+
+nav{
+    position:fixed;
+    width:100%;
+    top:0;
+    z-index:1000;
+    background:white;
+    box-shadow:0 2px 10px rgba(0,0,0,.08);
+}
+
+nav ul{
+    display:flex;
+    justify-content:center;
+    list-style:none;
+    padding:18px;
+    gap:30px;
+}
+
+nav a{
+    text-decoration:none;
+    color:#333;
+    font-weight:500;
+}
+
+nav a:hover{
+    color:#6c63ff;
+}
+
+section{
+    padding:90px 10%;
+}
+
+.hero{
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    background:linear-gradient(135deg,#6c63ff,#8a84ff);
+    color:white;
+}
+
+.hero h1{
+    font-size:3.2rem;
+}
+
+.hero h2{
+    margin-top:10px;
+    font-weight:400;
+}
+
+.hero p{
+    margin-top:15px;
+    max-width:700px;
+}
+
+.btn{
+    display:inline-block;
+    margin-top:25px;
+    padding:12px 24px;
+    border-radius:30px;
+    background:white;
+    color:#6c63ff;
+    text-decoration:none;
+    font-weight:600;
+    transition:.3s;
+}
+
+.btn:hover{
+    transform:translateY(-3px);
+}
+
+.title{
+    text-align:center;
+    margin-bottom:40px;
+    color:#6c63ff;
+}
+
+.about-card,
+.edu-card,
+.contact-card{
+    background:white;
+    padding:25px;
+    border-radius:15px;
+    box-shadow:0 5px 15px rgba(0,0,0,.08);
+}
+
+.skills-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
+    gap:20px;
+}
+
+.skill{
+    background:white;
+    padding:20px;
+    text-align:center;
+    border-radius:15px;
+    box-shadow:0 5px 15px rgba(0,0,0,.08);
+    font-weight:600;
+}
+
+.projects{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:25px;
+}
+
+.project-card{
+    background:white;
+    border-radius:15px;
+    padding:20px;
+    box-shadow:0 5px 15px rgba(0,0,0,.08);
+    transition:.3s;
+}
+
+.project-card:hover{
+    transform:translateY(-5px);
+}
+
+.project-card h3{
+    color:#6c63ff;
+    margin-bottom:10px;
+}
+
+.timeline{
+    display:grid;
+    gap:20px;
+}
+
+.timeline-item{
+    background:white;
+    padding:20px;
+    border-left:5px solid #6c63ff;
+    border-radius:10px;
+    box-shadow:0 5px 15px rgba(0,0,0,.08);
+}
+
+.contact-card{
+    text-align:center;
+}
+
+footer{
+    background:#222;
+    color:white;
+    text-align:center;
+    padding:20px;
+}
+
+.fade{
+    opacity:0;
+    transform:translateY(30px);
+    transition:1s;
+}
+
+.show{
+    opacity:1;
+    transform:translateY(0);
+}
+
+@media(max-width:768px){
+    .hero h1{
+        font-size:2.3rem;
+    }
+
+    nav ul{
+        gap:15px;
+        font-size:14px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<nav>
+<ul>
+<li><a href="#home">Home</a></li>
+<li><a href="#about">About</a></li>
+<li><a href="#skills">Skills</a></li>
+<li><a href="#projects">Projects</a></li>
+<li><a href="#education">Education</a></li>
+<li><a href="#contact">Contact</a></li>
+</ul>
+</nav>
+
+<section class="hero" id="home">
+<div>
+<h1>Gandham Akshitha</h1>
+<h2>Software Developer</h2>
+<p>
+Passionate Software Developer with knowledge of C, Python,
+HTML, CSS, and JavaScript. Dedicated to building innovative
+solutions and continuously learning emerging technologies.
+</p>
+
+<a href="#projects" class="btn">View Projects</a>
+</div>
+</section>
+
+<section id="about" class="fade">
+<h2 class="title">About Me</h2>
+
+<div class="about-card">
+<p>
+I am Gandham Akshitha, a B.Tech graduate from Rajeev Gandhi Memorial
+College of Engineering and Technology with a CGPA of 7.79.
+I enjoy developing software applications, solving problems,
+and learning new technologies that create real-world impact.
+</p>
+</div>
+</section>
+
+<section id="skills" class="fade">
+<h2 class="title">Skills</h2>
+
+<div class="skills-grid">
+<div class="skill">C Programming</div>
+<div class="skill">Python</div>
+<div class="skill">HTML</div>
+<div class="skill">CSS</div>
+<div class="skill">JavaScript</div>
+<div class="skill">Problem Solving</div>
+<div class="skill">Communication</div>
+<div class="skill">Team Collaboration</div>
+</div>
+</section>
+
+<section id="projects" class="fade">
+<h2 class="title">Projects</h2>
+
+<div class="projects">
+
+<div class="project-card">
+<h3>True Review Generator</h3>
+<p>
+Developed an application that generates meaningful reviews
+to help users evaluate products and services effectively.
+</p>
+</div>
+
+<div class="project-card">
+<h3>Mood Detection</h3>
+<p>
+Created a mood detection system that analyzes user input
+and identifies emotional states through logical processing.
+</p>
+</div>
+
+<div class="project-card">
+<h3>Social Media Mini App</h3>
+<p>
+Built a responsive social media application with user
+interaction and content sharing features.
+</p>
+</div>
+
+</div>
+</section>
+
+<section id="education" class="fade">
+<h2 class="title">Education & Achievements</h2>
+
+<div class="timeline">
+
+<div class="timeline-item">
+<h3>B.Tech</h3>
+<p>Rajeev Gandhi Memorial College of Engineering and Technology</p>
+<p>CGPA: 7.79</p>
+</div>
+
+<div class="timeline-item">
+<h3>EduSkills Virtual Internship</h3>
+<p>Completed virtual internship and gained practical industry exposure.</p>
+</div>
+
+<div class="timeline-item">
+<h3>Achievements</h3>
+<p>Organized Coding Event</p>
+<p>Participated in Hackathons</p>
+<p>Participated in Coding Competitions</p>
+<p>Participated in Web Designing Activities</p>
+</div>
+
+</div>
+</section>
+
+<section id="contact" class="fade">
+<h2 class="title">Contact</h2>
+
+<div class="contact-card">
+<h3>Let's Connect</h3>
+
+<p><strong>Email:</strong> gandhamakshitha4566@gmail.com</p>
+<p><strong>Phone:</strong> 7569644354</p>
+
+<p>
+<strong>LinkedIn:</strong><br>
+<a href="https://www.linkedin.com/in/gandham-akshitha-b5125932a"
+target="_blank">
+View LinkedIn Profile
+</a>
+</p>
+
+</div>
+</section>
+
+<footer>
+<p>© 2026 Gandham Akshitha | Software Developer</p>
+</footer>
+
+<script>
+const observer = new IntersectionObserver(entries=>{
+entries.forEach(entry=>{
+if(entry.isIntersecting){
+entry.target.classList.add("show");
+}
+});
+});
+
+document.querySelectorAll(".fade").forEach(section=>{
+observer.observe(section);
+});
+</script>
+
+</body>
+</html>
